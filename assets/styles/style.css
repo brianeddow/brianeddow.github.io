@@ -1,0 +1,209 @@
+
+body {
+	font-family: Palanquin,
+							 "HelveticaNeue-Light", 
+							 "Helvetica Neue Light", 
+							 "Helvetica Neue", 
+							 Helvetica, 
+							 Arial, 
+							 "Lucida Grande", 
+							 sans-serif;
+	margin: 0;
+	text-shadow: 1px 1px #bbb;
+}
+
+@media only screen and (min-width: 375px) {
+
+	p {
+		max-width: 70%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+
+	.section {
+		position: relative;
+		padding: 75px 0;
+		height: 450px;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.intro {
+		z-index: 1000;
+		min-height: 770px;
+		background-image: url("../media/background.jpeg");
+		background-position: center;
+		background-size: cover;
+		box-shadow: 0px 30px 100px #000;
+	}
+
+	.my-work {
+		z-index: 900;
+		height: 100%;
+		background: #52bc59;
+		padding: 10% 0;
+		box-shadow: 0px 1px 50px #000;
+	}
+
+	.about {
+		z-index: 800;
+		vertical-align: middle;
+		background-image: url("../media/light.jpeg");
+		background-size: cover;
+		box-shadow: 0px 1px 50px #000;
+	}
+
+	.about-me-header {
+		padding-bottom: 90px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.my-work-header {
+		padding-top: 70px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contact-me {
+		background: #fcfd95;
+		padding: 10% 0;
+	}
+
+	#greeting {
+		position: relative;
+		text-align: center;
+		top: 150px;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#photo-card {
+		display: none;
+		position: relative;
+		text-align: center;
+		top: 200px;
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		border-radius: 50%;
+		border: 1px solid #fff;
+	}
+
+	.icon {
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		padding: 30px;
+	}
+
+	.button-contact-me {
+		border: 1px solid #eee;
+		font-size: 20px;
+		border-radius: 20px;
+		width: 300px;
+		height: 100px;
+		margin-top: 60px;
+		background-image: linear-gradient(to bottom right, white, gold);
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+
+	p {
+		max-width: 70%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+
+	.section {
+		position: relative;
+		padding: 75px 0;
+		height: 450px;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.intro {
+		z-index: 1000;
+		min-height: 770px;
+		background-image: url("../media/background.jpeg");
+		background-position: center;
+		background-size: cover;
+		box-shadow: 0px 30px 100px #000;
+	}
+
+	.my-work {
+		z-index: 900;
+		height: 100%;
+		background: #52bc59;
+		padding: 10% 0;
+		box-shadow: 0px 1px 50px #000;
+	}
+
+	.about {
+		z-index: 800;
+		vertical-align: middle;
+		background-image: url("../media/light.jpeg");
+		background-size: cover;
+		box-shadow: 0px 1px 50px #000;
+	}
+
+	#photo-card {
+		display: none;
+		position: relative;
+		text-align: center;
+		top: 200px;
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		border-radius: 50%;
+		border: 1px solid #fff;
+	}
+
+	.about-me-header {
+		padding-bottom: 90px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.my-work-header {
+		padding-top: 70px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contact-me {
+		background: #fcfd95;
+		padding: 10% 0;
+	}
+
+	#greeting {
+		position: relative;
+		text-align: center;
+		top: 150px;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.icon {
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		padding: 30px;
+	}
+
+	.button-contact-me {
+		border: 1px solid #eee;
+		font-size: 20px;
+		border-radius: 20px;
+		width: 300px;
+		height: 100px;
+		margin-top: 60px;
+		background-image: linear-gradient(to bottom right, white, gold);
+	}
+}
