@@ -11,7 +11,9 @@
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
+  <!-- edit the above ...eventually -->
   <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
@@ -22,9 +24,16 @@
 	</div>
 	<div class="section my-work">
     <p class="my-work-header">Projects/Snippets below use HTML, CSS, Vanilla JavaScript and jQuery</p>
-    <p><a href="http://jsfiddle.net/user/brianeddow/fiddles"><img src="./assets/media/jsfiddle.png" class="icon" alt="jsfiddle"></a>
-    <a href="http://codepen.io/intermittentdev"><img src="./assets/media/codepen.png" class="icon" alt="codepen"></a>
-    <a href="http://github.com/brianeddow"><img src="./assets/media/github.png" class="icon" alt="github"></a>
+    <p>
+      <a href="http://jsfiddle.net/user/brianeddow/fiddles">
+        <img src="./assets/media/jsfiddle.png" class="icon" alt="jsfiddle" data-aos="fade-up">
+      </a>
+      <a href="http://codepen.io/intermittentdev">
+        <img src="./assets/media/codepen.png" class="icon" alt="codepen" data-aos="fade-up">
+      </a>
+      <a href="http://github.com/brianeddow">
+        <img src="./assets/media/github.png" class="icon" alt="github" data-aos="fade-up">
+      </a>
     </p>
 	</div>
 	<div class="section about">
@@ -41,6 +50,11 @@
 
   
   <script src="./assets/scripts/script.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159460440-1"></script>
   <script>
