@@ -1,7 +1,6 @@
 
 body {
-	font-family: Palanquin,
-							 "HelveticaNeue-Light", 
+	font-family: "HelveticaNeue-Light", 
 							 "Helvetica Neue Light", 
 							 "Helvetica Neue", 
 							 Helvetica, 
@@ -80,7 +79,7 @@ body {
 	}
 
 	#photo-card {
-		display: none;
+		display: block;
 		position: relative;
 		text-align: center;
 		top: 200px;
@@ -88,7 +87,7 @@ body {
 		height: 200px;
 		margin: 0 auto;
 		border-radius: 50%;
-		border: 1px solid #fff;
+		border: 1px solid #ccc;
 	}
 
 	.icon {
@@ -99,7 +98,7 @@ body {
 		padding: 30px;
 	}
 
-	.button-contact-me {
+	.contact-me-button {
 		border: 1px solid #eee;
 		font-size: 20px;
 		border-radius: 20px;
@@ -153,15 +152,15 @@ body {
 	}
 
 	#photo-card {
-		display: none;
+		display: block;
 		position: relative;
 		text-align: center;
 		top: 200px;
-		width: 200px;
-		height: 200px;
+		width: 180px;
+		height: 180px;
 		margin: 0 auto;
 		border-radius: 50%;
-		border: 1px solid #fff;
+		border: 1px solid #ccc;
 	}
 
 	.about-me-header {
@@ -197,7 +196,7 @@ body {
 		padding: 30px;
 	}
 
-	.button-contact-me {
+	.contact-me-button {
 		border: 1px solid #eee;
 		font-size: 20px;
 		border-radius: 20px;
