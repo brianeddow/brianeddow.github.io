@@ -6,8 +6,6 @@
 
 $(document).ready(main); */
 
-/* nothing here yet */
-
 
 /*
 

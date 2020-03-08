@@ -11,7 +11,7 @@ body {
 	text-shadow: 1px 1px #bbb;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
 
 	p {
 		max-width: 70%;
@@ -70,21 +70,23 @@ body {
 		padding: 10% 0;
 	}
 
-	#greeting {
+	.greeting {
 		position: relative;
 		text-align: center;
-		top: 150px;
-		width: 50%;
+		top: 80px;
+		width: 100%;
 		margin: 0 auto;
+		color: #fff;
+		text-shadow: 1px 1px #000;
 	}
 
 	#photo-card {
 		display: block;
 		position: relative;
 		text-align: center;
-		top: 200px;
-		width: 200px;
-		height: 200px;
+		top: 130px;
+		width: 160px;
+		height: 160px;
 		margin: 0 auto;
 		border-radius: 50%;
 		border: 1px solid #ccc;
@@ -96,6 +98,11 @@ body {
 		width: 100px;
 		height: 100px;
 		padding: 30px;
+		transition: transform 0.3s;
+	}
+
+	p a img.icon:hover {
+		transform: scale(1.05) !important;
 	}
 
 	.contact-me-button {
@@ -152,7 +159,7 @@ body {
 	}
 
 	#photo-card {
-		display: block;
+		display: inline-block;
 		position: relative;
 		text-align: center;
 		top: 200px;
@@ -180,12 +187,16 @@ body {
 		padding: 10% 0;
 	}
 
-	#greeting {
+	.greeting {
 		position: relative;
+		display: block;
 		text-align: center;
 		top: 150px;
-		width: 50%;
+		width: 100%;
+		padding: 0;
 		margin: 0 auto;
+		color: #fff;
+		text-shadow: 1px 1px #000;
 	}
 
 	.icon {
@@ -194,6 +205,11 @@ body {
 		width: 100px;
 		height: 100px;
 		padding: 30px;
+		transition: transform 0.3s;
+	}
+
+	p a img.icon:hover {
+		transform: scale(1.05) !important;
 	}
 
 	.contact-me-button {
