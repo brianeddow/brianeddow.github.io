@@ -54,6 +54,7 @@ body {
 	}
 
 	.about-me-header {
+		padding-top: 30px;
 		padding-bottom: 90px;
 		font-size: 20px;
 		text-align: center;
@@ -150,7 +151,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
 
 	a {
 		/** 
@@ -212,6 +213,7 @@ body {
 	}
 
 	.about-me-header {
+		padding-top: 30px;
 		padding-bottom: 90px;
 		font-size: 20px;
 		text-align: center;
