@@ -40,7 +40,7 @@ body {
 	.my-work {
 		z-index: 900;
 		height: 100%;
-		background: #52bc59;
+		background: #0f90a3;
 		padding: 10% 0;
 		box-shadow: 0px 1px 50px #000;
 	}
@@ -73,7 +73,7 @@ body {
 	.greeting {
 		position: relative;
 		text-align: center;
-		top: 80px;
+		top: 40px;
 		width: 100%;
 		margin: 0 auto;
 		color: #fff;
@@ -84,7 +84,7 @@ body {
 		display: block;
 		position: relative;
 		text-align: center;
-		top: 130px;
+		top: 80px;
 		width: 160px;
 		height: 160px;
 		margin: 0 auto;
@@ -113,6 +113,39 @@ body {
 		height: 100px;
 		margin-top: 60px;
 		background-image: linear-gradient(to bottom right, white, gold);
+	}
+
+	#arrow {
+		position: relative;
+		top: 175px;
+		margin: 0 auto;
+		max-width: 100px;
+		height: 50px;
+		border: 0;
+	}
+
+	#arrow-left {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		right: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(39deg);
+	}
+
+	#arrow-right {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		left: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(-39deg);
 	}
 }
 
@@ -145,7 +178,7 @@ body {
 	.my-work {
 		z-index: 900;
 		height: 100%;
-		background: #52bc59;
+		background: #0f90a3 /*#41bed2 52bc59*/;
 		padding: 10% 0;
 		box-shadow: 0px 1px 50px #000;
 	}
@@ -159,10 +192,10 @@ body {
 	}
 
 	#photo-card {
-		display: inline-block;
+		display: block;
 		position: relative;
 		text-align: center;
-		top: 200px;
+		top: 150px;
 		width: 180px;
 		height: 180px;
 		margin: 0 auto;
@@ -191,7 +224,7 @@ body {
 		position: relative;
 		display: block;
 		text-align: center;
-		top: 150px;
+		top: 100px;
 		width: 100%;
 		padding: 0;
 		margin: 0 auto;
@@ -220,5 +253,38 @@ body {
 		height: 100px;
 		margin-top: 60px;
 		background-image: linear-gradient(to bottom right, white, gold);
+	}
+
+	#arrow {
+		position: relative;
+		top: 250px;
+		margin: 0 auto;
+		max-width: 100px;
+		height: 50px;
+		border: 0;
+	}
+
+	#arrow-left {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		right: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(39deg);
+	}
+
+	#arrow-right {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		left: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(-39deg);
 	}
 }
