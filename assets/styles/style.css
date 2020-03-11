@@ -152,6 +152,13 @@ body {
 
 @media only screen and (min-width: 1025px) {
 
+	a {
+		/** 
+		 * fix underline in my-work icons
+		 * in desktop mode */
+		text-decoration: none;
+	}
+
 	p {
 		max-width: 70%;
 		margin: 0 auto;
@@ -196,7 +203,7 @@ body {
 		display: block;
 		position: relative;
 		text-align: center;
-		top: 150px;
+		top: 140px;
 		width: 180px;
 		height: 180px;
 		margin: 0 auto;
@@ -225,7 +232,7 @@ body {
 		position: relative;
 		display: block;
 		text-align: center;
-		top: 110px;
+		top: 90px;
 		width: 100%;
 		padding: 0;
 		margin: 0 auto;
@@ -235,7 +242,7 @@ body {
 	}
 
 	.icon {
-		display: block;
+		display: inline-block;
 		margin: 0 auto;
 		width: 100px;
 		height: 100px;
@@ -259,7 +266,7 @@ body {
 
 	#arrow {
 		position: relative;
-		top: 250px;
+		top: 210px;
 		margin: 0 auto;
 		max-width: 100px;
 		height: 50px;
