@@ -47,6 +47,7 @@ body {
 
 	.about {
 		z-index: 800;
+		min-height: 550px;
 		vertical-align: middle;
 		background-image: url("../media/light.jpeg");
 		background-size: cover;
@@ -67,7 +68,7 @@ body {
 	}
 
 	.contact-me {
-		background: #fcfd95;
+		background: #f2a644;
 		padding: 10% 0;
 	}
 
@@ -149,6 +150,39 @@ body {
 		background: #fff;
 		transform: rotate(-39deg);
 	}
+
+	#arrow-up {
+		position: relative;
+		top: 210px;
+		margin: 0 auto;
+		max-width: 100px;
+		height: 50px;
+		border: 0;
+	}
+
+	#arrow-up-left {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		right: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(-39deg);
+	}
+
+	#arrow-up-right {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		left: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(39deg);
+	}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -226,7 +260,7 @@ body {
 	}
 
 	.contact-me {
-		background: #fcfd95;
+		background: #f2a644 /* fcfd95 */;
 		padding: 10% 0;
 	}
 
@@ -297,5 +331,38 @@ body {
 		border: 1px solid #fff;
 		background: #fff;
 		transform: rotate(-39deg);
+	}
+
+	#arrow-up {
+		position: relative;
+		top: 210px;
+		margin: 0 auto;
+		max-width: 100px;
+		height: 50px;
+		border: 0;
+	}
+
+	#arrow-up-left {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		right: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(-39deg);
+	}
+
+	#arrow-up-right {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		left: 34.5px;
+		width: 1px;
+		height: 45px;
+		border: 1px solid #fff;
+		background: #fff;
+		transform: rotate(39deg);
 	}
 }

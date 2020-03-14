@@ -1,7 +1,5 @@
 /* function main() {
 
-	
-
 }
 
 $(document).ready(main); */
@@ -20,3 +18,20 @@ document.addEventListener('aos:out', ({ detail }) => {
 });
 
 */
+
+window.onscroll = () => scrollCheck();
+
+scrollCheck = () => {
+	let arrowUp = document.getElementById("arrow-up");
+
+  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+    arrowUp.style.display = "block";
+  } else {
+    arrowUp.style.display = "none";
+  }
+}
+
+getHome = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
