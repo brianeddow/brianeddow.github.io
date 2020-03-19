@@ -8,73 +8,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Brian Eddow</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <meta name="keywords" content="keywords,here">
-  <!-- edit the above ...eventually -->
+  <meta name="author" content="Brian Eddow">
+  <meta name="description" content="full stack web developer reigniting love for code after realizing aha-moment!">
+  <meta name="keywords" content="fullstack, web, dev, developer, web developer, css, html, javascript, node, angular, web design, ux, ui, mobile, responsive, brian, eddow, brian eddow">
+  <!-- edit the above -->
   <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
+  <link rel="stylesheet" href="./assets/styles/contact.css" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
+  <div id="spa">
+  	<div class="section intro">
+      <p class="greeting">Hi, I'm Brian.</p>
+      <p class="greeting">Welcome to my landing page</p>
+      <img id="photo-card" src="./assets/media/landing-icon.jpg" 
+                           data-aos="zoom-out" 
+                           data-aos-duration="1700">
+  	</div>
+  	<div class="section my-work">
+      <p class="my-work-header">Projects/Snippets below use HTML, CSS, Vanilla JavaScript and jQuery</p>
+      <p>
+        <a href="http://jsfiddle.net/user/brianeddow/fiddles">
+          <img 
+            src="./assets/media/jsfiddle.png" 
+            class="icon" 
+            alt="jsfiddle" 
+            data-aos="fade-up">
+        </a>
+        <a href="http://codepen.io/intermittentdev">
+          <img 
+            src="./assets/media/codepen.png" 
+            class="icon" 
+            alt="codepen" 
+            data-aos="fade-up" 
+            data-aos-delay="150">
+        </a>
+        <a href="http://github.com/brianeddow">
+          <img 
+            src="./assets/media/github.png" 
+            class="icon" 
+            alt="github" 
+            data-aos="fade-up" 
+            data-aos-delay="300">
+        </a>
+      </p>
+  	</div>
+  	<div class="section about">
+      <p class="about-me-header" data-aos="zoom-out">About Me</p>
+      <p>I became a bootcamp graduate following a business degree after playing with web design in my early years.</p>
+      <p>My spark for development was reignited after realizing my aha moment, 5 years later!</p>
+      <p>Most of my time is spent with JavaScript but play with XCode and Swift occasionally.</p>
+      <p>I spend my time away from code playing music, at the gym, with my fiancée and friends.</p>
+  	</div>
+  	<div class="section contact-me">
+      <form action="mailto:brian.eddow@gmail.com">
+    		<button class="contact-me-button" id="open-contact-me" type="submit">CONTACT ME</button>
+      </form>
+      <div id="arrow-up" onclick="getHome()">
+        <div id="arrow-up-left"></div>
+        <div id="arrow-up-right"></div>
+      </div>
+  	</div>
+  </div>
 
-	<div class="section intro">
-    <p class="greeting">Hi, I'm Brian.</p>
-    <p class="greeting">Welcome to my landing page</p>
-    <img id="photo-card" src="./assets/media/landing-icon.jpg" 
-                         data-aos="zoom-out" 
-                         data-aos-duration="1700">
-    <div id="arrow">
-      <div id="arrow-left"></div>
-      <div id="arrow-right"></div>
-    </div>
-	</div>
-	<div class="section my-work">
-    <p class="my-work-header">Projects/Snippets below use HTML, CSS, Vanilla JavaScript and jQuery</p>
-    <p>
-      <a href="http://jsfiddle.net/user/brianeddow/fiddles">
-        <img 
-          src="./assets/media/jsfiddle.png" 
-          class="icon" 
-          alt="jsfiddle" 
-          data-aos="fade-up">
-      </a>
-      <a href="http://codepen.io/intermittentdev">
-        <img 
-          src="./assets/media/codepen.png" 
-          class="icon" 
-          alt="codepen" 
-          data-aos="fade-up" 
-          data-aos-delay="150">
-      </a>
-      <a href="http://github.com/brianeddow">
-        <img 
-          src="./assets/media/github.png" 
-          class="icon" 
-          alt="github" 
-          data-aos="fade-up" 
-          data-aos-delay="300">
-      </a>
+  <!---------------------                     --------------------->  
+  <div id="contact-form-wrapper">
+    <p id="form-header">WRITE ME</p>
+    <p class="input-wrapper">
+      <input type="text" id="name" class="contact-input form-input" placeholder="NAME"></input>
     </p>
-	</div>
-	<div class="section about">
-    <p class="about-me-header" data-aos="zoom-out">About Me</p>
-    <p>I became a bootcamp graduate following a business degree after playing with web design in my early years.</p>
-    <p>My spark for development was reignited after realizing my aha moment, 5 years later!</p>
-    <p>Most of my time is spent with JavaScript but play with XCode and Swift occasionally.</p>
-    <p>I spend my time away from code playing music, at the gym, with my fiancée and friends.</p>
-	</div>
-	<div class="section contact-me">
-    <form action="mailto:brian.eddow@gmail.com">
-  		<button class="contact-me-button" type="submit">CONTACT ME</button>
-    </form>
-    <div id="arrow-up" onclick="getHome()">
-      <div id="arrow-up-left"></div>
-      <div id="arrow-up-right"></div>
-    </div>
-	</div>
+    <p class="input-wrapper">
+      <input type="text" id="email" class="contact-input contact-input--2 form-input" placeholder="EMAIL"></input>
+    </p>
+    <p class="input-wrapper">
+      <input type="text" id="subject" class="contact-input contact-input--3 form-input" placeholder="TOPIC"></input>
+    </p>
+    <p class="input-wrapper">
+      <textarea type="text" id="comment" class="contact-textarea form-input" placeholder="COMMENT"></textarea>
+    </p>
+    <button id="close-contact-me">S E N D</button>
+  </div>
 
-  
+  <!---------------------                     --------------------->
   <script src="./assets/scripts/script.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
