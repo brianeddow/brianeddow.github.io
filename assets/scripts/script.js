@@ -52,4 +52,3 @@ closeContactMe.addEventListener("click", function() {
   contactMe.style.display = "none";
 })
 */
-

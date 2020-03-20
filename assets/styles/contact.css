@@ -11,6 +11,8 @@
 		padding-top: 60px;
 		padding-bottom: 60px;
 		font-size: 35px;
+		color: #fff;
+		user-select: none;
 	}
 
 	.input-wrapper {
@@ -78,6 +80,7 @@
 		margin: 0 auto;
 		width: 600px;
 		font-size: 35px;
+		color: #000;
 		user-select: none;
 	}
 
