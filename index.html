@@ -62,7 +62,7 @@
       <p>I spend my time away from code playing music, at the gym, with my fiancée and friends.</p>
   	</div>
   	<div class="section contact-me">
-      <form action="mailto:brian.eddow@gmail.com">
+      <!-- <form action="mailto:brian.eddow@gmail.com"> -->
     		<button class="contact-me-button" id="open-contact-me" type="submit">CONTACT ME</button>
       </form>
       <div id="arrow-up" onclick="getHome()">
@@ -78,36 +78,40 @@
     <p class="input-wrapper">
       <input type="text" 
              id="name" 
-             class="contact-input form-input" 
+             class="contact-input" 
              placeholder="NAME">
       </input>
     </p>
     <p class="input-wrapper">
       <input type="text" 
              id="email" 
-             class="contact-input contact-input--2 form-input" 
+             class="contact-input contact-input--2" 
              placeholder="EMAIL">
       </input>
     </p>
     <p class="input-wrapper">
       <input type="text" 
-             id="subject" 
-             class="contact-input contact-input--3 form-input" 
+             id="topic" 
+             class="contact-input contact-input--3" 
              placeholder="TOPIC">
       </input>
     </p>
     <p class="input-wrapper">
       <textarea type="text" 
                 id="comment" 
-                class="contact-textarea form-input" 
+                class="contact-textarea" 
                 placeholder="COMMENT">
       </textarea>
     </p>
     <button id="close-contact-me">S E N D</button>
+    <button class="form-button" id="reset-form">R E S E T</button>
   </div>
 
   <!---------------------                     --------------------->
   <script src="./assets/scripts/script.js"></script>
+  <!-- email client -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./assets/scripts/mailer.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
