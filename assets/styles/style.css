@@ -20,6 +20,47 @@ body {
 		text-align: center;
 	}
 
+	/**
+	 * 			https://keithclark.co.uk/articles/pure-css-parallax-websites/
+	 *			rellax.js interfered with onscroll listener for up-arrow
+	 *			parallax begin 																						 */
+
+	.parallax {
+		z-index: 1000;
+	  perspective: 1px;
+	  height: 800px;
+	  background: #000;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  perspective-origin-x: 100%;
+	}
+
+	.parallax__group {
+	  position: relative;
+	  height: 100vh;
+	  transform-style: preserve-3d;
+	}
+
+	.parallax__layer {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  transform-origin-x: 100%;
+	}
+
+	.parallax__layer--base {
+	  transform: translateZ(0);
+	}
+
+	.parallax__layer--back {
+	  transform: translateZ(-1px) scale(2);
+	}
+
+	/**
+	 *			parallax end 			*/
+
 	.section {
 		position: relative;
 		padding: 75px 0;
@@ -28,23 +69,44 @@ body {
 		overflow: hidden;
 	}
 
+	.greeting {
+		position: relative;
+		text-align: center;
+		top: 140px;
+		width: 100%;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 20px;
+		text-shadow: 1px 1px #000;
+	}
+
+	#greeting-photo-card {
+		display: block;
+		position: relative;
+		text-align: center;
+		top: 200px;
+		width: 160px;
+		height: 160px;
+		margin: 0 auto;
+		border-radius: 50%;
+		border: 0;
+	}
+
 	.intro {
 		z-index: 1000;
-		min-height: 770px;
-		background-image: url("../media/background.jpeg");
-		background-position: center;
-		background-attachment: fixed;
-		background-size: cover;
-  	background-repeat: no-repeat;
-		box-shadow: 0px 30px 100px #000;
+		min-height: 570px;
+		background-repeat: none;
+		background-size: auto;
+		margin-left: -750px
 	}
 
 	.my-work {
+		margin-top: -50px;
 		z-index: 900;
 		height: 100%;
 		background: #0f90a3;
 		padding: 10% 0;
-		box-shadow: 0px 1px 50px #000;
+		box-shadow: inset 0 50px 50px -50px #000, 0px 1px 50px #000;
 	}
 
 	.about {
@@ -71,30 +133,8 @@ body {
 
 	.contact-me {
 		background: #f2a644;
-		padding: 10% 0;
-	}
-
-	.greeting {
-		position: relative;
-		text-align: center;
-		top: 40px;
-		width: 100%;
-		margin: 0 auto;
-		color: #fff;
-		font-size: 24px;
-		text-shadow: 1px 1px #000;
-	}
-
-	#photo-card {
-		display: block;
-		position: relative;
-		text-align: center;
-		top: 70px;
-		width: 160px;
-		height: 160px;
-		margin: 0 auto;
-		border-radius: 50%;
-		border: 0;
+		padding: 15% 0;
+		height: 520px;
 	}
 
 	.icon {
@@ -104,10 +144,6 @@ body {
 		height: 100px;
 		padding: 30px;
 		transition: transform 0.3s;
-	}
-
-	p a img.icon:hover {
-		transform: scale(1.05) !important;
 	}
 
 	#open-contact-me {
@@ -188,7 +224,23 @@ body {
 
 }
 
+@media only screen and (min-width: 768px) {
+
+	.intro {
+		z-index: 1000;
+		min-height: 570px;
+		background-repeat: none;
+		background-size: auto;
+		margin-left: -400px
+	}
+
+}
+
 @media only screen and (min-width: 1024px) {
+
+	:root {
+		--scale-size: scale(1.05);
+	}
 
 	a {
 		/** 
@@ -205,6 +257,47 @@ body {
 		user-select: none;
 	}
 
+	/**
+	 *
+	 parallax begin */
+
+	.parallax {
+		z-index: 1000;
+	  perspective: 1px;
+	  height: 630px;
+	  background: #000;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  perspective-origin-x: 100%;
+	}
+
+	.parallax__group {
+	  position: relative;
+	  height: 100vh;
+	  transform-style: preserve-3d;
+	}
+
+	.parallax__layer {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  transform-origin-x: 100%;
+	}
+
+	.parallax__layer--base {
+	  transform: translateZ(0);
+	}
+
+	.parallax__layer--back {
+	  transform: translateZ(-1px) scale(2);
+	}
+
+	/**
+	 *
+	 parallax end */
+
 	#spa {
 		display: block;
 	}
@@ -212,27 +305,51 @@ body {
 	.section {
 		position: relative;
 		padding: 75px 0;
-		height: 450px;
+		height: 550px;
 		text-align: center;
 		overflow: hidden;
 	}
 
 	.intro {
 		z-index: 1000;
-		min-height: 770px;
-		background-image: url("../media/background.jpeg");
-		background-position: center;
-		background-attachment: fixed;
-		background-size: cover;
-		box-shadow: 0px 30px 100px #000;
+		min-height: 900px;
+		background-repeat: none;
+		margin-left: 0;
+	}
+
+	.greeting {
+		position: relative;
+		display: block;
+		text-align: center;
+		top: 150px;
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 20px;
+		text-shadow: 1px 1px #000;
+		user-select: none;
+	}
+
+	#greeting-photo-card {
+		display: block;
+		position: relative;
+		text-align: center;
+		top: 290px;
+		width: 180px;
+		height: 180px;
+		margin: 0 auto;
+		border-radius: 50%;
+		border: 0;
 	}
 
 	.my-work {
+		margin-top: 0;
 		z-index: 900;
 		height: 100%;
-		background: #0f90a3 /*#41bed2 52bc59*/;
+		background: #0f90a3;
 		padding: 10% 0;
-		box-shadow: 0px 1px 50px #000;
+		box-shadow: inset 0 50px 50px -50px #000, 0px 1px 50px #000;
 	}
 
 	.about {
@@ -242,18 +359,6 @@ body {
 		background-image: url("../media/light.jpeg");
 		background-size: cover;
 		box-shadow: 0px 1px 50px #000;
-	}
-
-	#photo-card {
-		display: block;
-		position: relative;
-		text-align: center;
-		top: 90px;
-		width: 180px;
-		height: 180px;
-		margin: 0 auto;
-		border-radius: 50%;
-		border: 0;
 	}
 
 	.about-me-header {
@@ -271,22 +376,9 @@ body {
 	}
 
 	.contact-me {
-		background: #f2a644 /* fcfd95 */;
+		background: #f2a644;
 		padding: 10% 0;
-	}
-
-	.greeting {
-		position: relative;
-		display: block;
-		text-align: center;
-		top: 30px;
-		width: 100%;
-		padding: 0;
-		margin: 0 auto;
-		color: #fff;
-		font-size: 20px;
-		text-shadow: 1px 1px #000;
-		user-select: none;
+		height: 520px;
 	}
 
 	.icon {
@@ -298,11 +390,18 @@ body {
 		transition: transform 0.3s;
 	}
 
-	p a img.icon:hover {
-		transform: scale(1.05) !important;
+	body a#jsfid img.icon:hover {
+		transform: var(--scale-size);
 	}
 
-	/* not in use? */
+	body a#codepen img.icon:hover {
+		transform: var(--scale-size);
+	}
+
+	body a#github img.icon:hover {
+		transform: var(--scale-size);
+	}
+
 	.open-contact-me {
 		border: 1px solid #eee;
 		font-size: 20px;

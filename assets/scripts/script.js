@@ -1,14 +1,6 @@
-/* function main() {
-
-}
-
-$(document).ready(main); */
-
-
-/*
-
 // ----- sample AOS event listeners ----- //
 
+/*
 document.addEventListener('aos:in', ({ detail }) => {
   console.log('animated in', detail);
 });
@@ -16,7 +8,6 @@ document.addEventListener('aos:in', ({ detail }) => {
 document.addEventListener('aos:out', ({ detail }) => {
   console.log('animated out', detail);
 });
-
 */
 
 /* up arrow logics */
@@ -24,8 +15,8 @@ window.onscroll = () => arrowVis();
 
 arrowVis = () => {
   const arrowUp = document.getElementById("arrow-up");
-  if (document.body.scrollTop > 2000 || 
-      document.documentElement.scrollTop > 2000) {
+  if (document.body.scrollTop > 1800 || 
+      document.documentElement.scrollTop > 1800) {
     arrowUp.style.display = "block";
   } else {
     arrowUp.style.display = "none";
@@ -39,7 +30,7 @@ getHome = () => {
 
 
 /* contact button logics */
-let   contactMeButton = document.getElementById("open-contact-me"),
+const contactMeButton = document.getElementById("open-contact-me"),
       spa = document.getElementById("spa"),
       contactMe = document.getElementById("contact-form-wrapper"),
       closeContactMe = document.getElementById("close-contact-me");
@@ -60,7 +51,11 @@ closeContactMe.addEventListener("click", closeContactMeData)
  * email logics */
 
 /* reset form fields event listener */
-document.getElementById("reset-form").addEventListener("click", () => { resetForm(); })
+document
+  .getElementById("reset-form")
+  .addEventListener("click", () => { 
+    resetForm(); 
+  });
 
 /* reset form fields function */
 resetForm = () => {
@@ -69,7 +64,10 @@ resetForm = () => {
         topic = document.getElementById("topic"),
         comment = document.getElementById("comment"),
         entities = new Array(name,email,topic,comment);
-  entities.map(ent => { ent.value = ""; }) 
+  entities
+    .map(ent => { 
+      ent.value = "";
+    });
 }
 
 

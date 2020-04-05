@@ -19,24 +19,36 @@
   <body>
 
   <div id="spa">
-  	<div class="section intro">
-      <p class="greeting">Hi, I'm Brian.</p>
-      <p class="greeting">Welcome to my landing page</p>
-      <img id="photo-card" src="./assets/media/landing-icon.jpg" 
-                           data-aos="zoom-out" 
-                           data-aos-duration="1700">
+    <div class="parallax">
+      <div class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+          <!-- background -->
+          <div class="intro">
+            <img src="./assets/media/background.jpeg">
+          </div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <!-- foreground -->
+          <p class="greeting">Hi, I'm Brian.</p>
+          <p class="greeting">Welcome to my landing page</p>
+          <img id="greeting-photo-card" 
+               src="./assets/media/landing-icon.jpg" 
+               data-aos="zoom-out" 
+               data-aos-duration="1700">
+        </div>
+      </div>
   	</div>
   	<div class="section my-work">
       <p class="my-work-header">Projects/Snippets below use HTML, CSS, Vanilla JavaScript and jQuery</p>
       <p>
-        <a href="http://jsfiddle.net/user/brianeddow/fiddles">
+        <a href="http://jsfiddle.net/user/brianeddow/fiddles" id="jsfid">
           <img 
             src="./assets/media/jsfiddle.png" 
             class="icon" 
             alt="jsfiddle" 
             data-aos="fade-up">
         </a>
-        <a href="http://codepen.io/intermittentdev">
+        <a href="http://codepen.io/intermittentdev" id="codepen">
           <img 
             src="./assets/media/codepen.png" 
             class="icon" 
@@ -44,7 +56,7 @@
             data-aos="fade-up" 
             data-aos-delay="150">
         </a>
-        <a href="http://github.com/brianeddow">
+        <a href="http://github.com/brianeddow" id="github">
           <img 
             src="./assets/media/github.png" 
             class="icon" 
@@ -62,16 +74,13 @@
       <p>I spend my time away from code playing music, at the gym, with my fiancée and friends.</p>
   	</div>
   	<div class="section contact-me">
-      <!-- <form action="mailto:brian.eddow@gmail.com"> -->
-    		<button class="contact-me-button" id="open-contact-me" type="submit">CONTACT ME</button>
-      </form>
+    	<button class="contact-me-button" id="open-contact-me" type="submit">CONTACT ME</button>
       <div id="arrow-up" onclick="getHome()">
         <div id="arrow-up-left"></div>
         <div id="arrow-up-right"></div>
       </div>
   	</div>
   </div>
-
   <!---------------------                     --------------------->  
   <div id="contact-form-wrapper">
     <p id="form-header">WRITE ME</p>
@@ -114,9 +123,7 @@
   <script src="./assets/scripts/mailer.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script> AOS.init(); </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159460440-1"></script>
   <script>
