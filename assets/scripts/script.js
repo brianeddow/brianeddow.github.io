@@ -64,10 +64,7 @@ resetForm = () => {
         topic = document.getElementById("topic"),
         comment = document.getElementById("comment"),
         entities = new Array(name,email,topic,comment);
-  entities
-    .map(ent => { 
-      ent.value = "";
-    });
+  entities.map(ent => { ent.value = ""; });
 }
 
 

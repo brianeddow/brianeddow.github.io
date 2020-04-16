@@ -107,7 +107,7 @@
 		margin: 0 auto;
 		padding: 0;
 		top: 0;
-		background: #f2e090 /* d97 */;
+		background: #f2e090;
 		text-align: center;
 	}
 
@@ -151,7 +151,7 @@
 		text-transform: uppercase;
 		border: 1px solid #222;
 		border-radius: 0;
-		box-shadow: 0 0 15px #d1776e/* d22515 */;
+		box-shadow: 0 0 15px #d1776e;
 		background: #fff;
 	}
 

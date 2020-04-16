@@ -22,7 +22,7 @@ body {
 
 	/**
 	 * 			https://keithclark.co.uk/articles/pure-css-parallax-websites/
-	 *			rellax.js interfered with onscroll listener for up-arrow
+	 *			rellax.js conflicted with onscroll listener for up-arrow
 	 *			parallax begin 																						 */
 
 	.parallax {
@@ -51,10 +51,18 @@ body {
 	}
 
 	.parallax__layer--base {
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
 	  transform: translateZ(0);
 	}
 
 	.parallax__layer--back {
+		-webkit-transform: translateZ(-1px) scale(2);
+		-moz-transform: translateZ(-1px) scale(2);
+		-ms-transform: translateZ(-1px) scale(2);
+		-o-transform: translateZ(-1px) scale(2);
 	  transform: translateZ(-1px) scale(2);
 	}
 
@@ -174,6 +182,10 @@ body {
 		height: 45px;
 		border: 1px solid #fff;
 		background: #fff;
+		-webkit-transform: rotate(39deg);
+		-moz-transform: rotate(39deg);
+		-ms-transform: rotate(39deg);
+		-o-transform: rotate(39deg);
 		transform: rotate(39deg);
 	}
 
@@ -186,6 +198,10 @@ body {
 		height: 45px;
 		border: 1px solid #fff;
 		background: #fff;
+		-webkit-transform: rotate(-39deg);
+		-moz-transform: rotate(-39deg);
+		-ms-transform: rotate(-39deg);
+		-o-transform: rotate(-39deg);
 		transform: rotate(-39deg);
 	}
 
@@ -207,6 +223,10 @@ body {
 		height: 45px;
 		border: 1px solid #fff;
 		background: #fff;
+		-webkit-transform: rotate(-39deg);
+		-moz-transform: rotate(-39deg);
+		-ms-transform: rotate(-39deg);
+		-o-transform: rotate(-39deg);
 		transform: rotate(-39deg);
 	}
 
@@ -219,6 +239,10 @@ body {
 		height: 45px;
 		border: 1px solid #fff;
 		background: #fff;
+		-webkit-transform: rotate(39deg);
+		-moz-transform: rotate(39deg);
+		-ms-transform: rotate(39deg);
+		-o-transform: rotate(39deg);
 		transform: rotate(39deg);
 	}
 
@@ -287,10 +311,18 @@ body {
 	}
 
 	.parallax__layer--base {
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
 	  transform: translateZ(0);
 	}
 
 	.parallax__layer--back {
+		-webkit-transform: translateZ(-1px) scale(2);
+		-moz-transform: translateZ(-1px) scale(2);
+		-ms-transform: translateZ(-1px) scale(2);
+		-o-transform: translateZ(-1px) scale(2);
 	  transform: translateZ(-1px) scale(2);
 	}
 
@@ -391,14 +423,26 @@ body {
 	}
 
 	body a#jsfid img.icon:hover {
+		-webkit-transform: var(--scale-size);
+		-moz-transform: var(--scale-size);
+		-ms-transform: var(--scale-size);
+		-o-transform: var(--scale-size);
 		transform: var(--scale-size);
 	}
 
 	body a#codepen img.icon:hover {
+		-webkit-transform: var(--scale-size);
+		-moz-transform: var(--scale-size);
+		-ms-transform: var(--scale-size);
+		-o-transform: var(--scale-size);
 		transform: var(--scale-size);
 	}
 
 	body a#github img.icon:hover {
+		-webkit-transform: var(--scale-size);
+		-moz-transform: var(--scale-size);
+		-ms-transform: var(--scale-size);
+		-o-transform: var(--scale-size);
 		transform: var(--scale-size);
 	}
 
@@ -421,7 +465,7 @@ body {
 		height: 50px;
 		border: 0;
 	}
-
+	
 	.arrow-up-transition {
 		transition: all 1s;
 	}
@@ -435,6 +479,10 @@ body {
 		height: 45px;
 		border: 1px solid #fff;
 		background: #fff;
+		-webkit-transform: rotate(-39deg);
+		-moz-transform: rotate(-39deg);
+		-ms-transform: rotate(-39deg);
+		-o-transform: rotate(-39deg);
 		transform: rotate(-39deg);
 	}
 
@@ -447,6 +495,10 @@ body {
 		height: 45px;
 		border: 1px solid #fff;
 		background: #fff;
+		-webkit-transform: rotate(39deg);
+		-moz-transform: rotate(39deg);
+		-ms-transform: rotate(39deg);
+		-o-transform: rotate(39deg);
 		transform: rotate(39deg);
 	}
 
