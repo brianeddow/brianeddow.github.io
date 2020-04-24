@@ -11,29 +11,31 @@ document.addEventListener('aos:out', ({ detail }) => {
 */
 
 /* up arrow logics */
-window.onscroll = () => arrowVis();
-
-arrowVis = () => {
+const arrowVis = () => {
   const arrowUp = document.getElementById("arrow-up");
-  if (document.body.scrollTop > 1800 || 
-      document.documentElement.scrollTop > 1800) {
+  if (document.body.scrollTop > 1900 || 
+      document.documentElement.scrollTop > 1900) {
     arrowUp.style.display = "block";
   } else {
     arrowUp.style.display = "none";
   }
 }
 
-getHome = () => {
+window.onscroll = () => arrowVis();
+
+const getHome = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
+document.getElementById("arrow-up").addEventListener("click", getHome);
 
 /* contact button logics */
 const contactMeButton = document.getElementById("open-contact-me"),
       spa = document.getElementById("spa"),
       contactMe = document.getElementById("contact-form-wrapper"),
-      closeContactMe = document.getElementById("close-contact-me");
+      closeContactMe = document.getElementById("close-contact-me"),
+      resetForm = document.getElementById("reset-form");
 
 const contactMeButtonData = () => {
         spa.style.display = "none";
@@ -51,14 +53,7 @@ closeContactMe.addEventListener("click", closeContactMeData)
  * email logics */
 
 /* reset form fields event listener */
-document
-  .getElementById("reset-form")
-  .addEventListener("click", () => { 
-    resetForm(); 
-  });
-
-/* reset form fields function */
-resetForm = () => {
+const resetFormAction = () => {
   const name = document.getElementById("name"),
         email = document.getElementById("email"),
         topic = document.getElementById("topic"),
@@ -67,5 +62,4 @@ resetForm = () => {
   entities.map(ent => { ent.value = ""; });
 }
 
-
-
+resetForm.addEventListener("click", resetFormAction);
