@@ -1,9 +1,10 @@
 
 body {
-	font-family: "HelveticaNeue-Light", 
+	font-family: Roboto,
+							 /* "HelveticaNeue-Light", 
 							 "Helvetica Neue Light", 
 							 "Helvetica Neue", 
-							 Helvetica, 
+							 Helvetica, */
 							 Arial, 
 							 "Lucida Grande", 
 							 sans-serif;
@@ -20,55 +21,6 @@ body {
 		text-align: center;
 	}
 
-	/**
-	 * 			https://keithclark.co.uk/articles/pure-css-parallax-websites/
-	 *			rellax.js conflicted with onscroll listener for up-arrow
-	 *			parallax begin 																						 */
-
-	.parallax {
-		z-index: 1000;
-	  perspective: 1px;
-	  height: 800px;
-	  background: #000;
-	  overflow-x: hidden;
-	  overflow-y: auto;
-	  perspective-origin-x: 100%;
-	}
-
-	.parallax__group {
-	  position: relative;
-	  height: 100vh;
-	  transform-style: preserve-3d;
-	}
-
-	.parallax__layer {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0;
-	  transform-origin-x: 100%;
-	}
-
-	.parallax__layer--base {
-		-webkit-transform: translateZ(0);
-		-moz-transform: translateZ(0);
-		-ms-transform: translateZ(0);
-		-o-transform: translateZ(0);
-	  transform: translateZ(0);
-	}
-
-	.parallax__layer--back {
-		-webkit-transform: translateZ(-1px) scale(2);
-		-moz-transform: translateZ(-1px) scale(2);
-		-ms-transform: translateZ(-1px) scale(2);
-		-o-transform: translateZ(-1px) scale(2);
-	  transform: translateZ(-1px) scale(2);
-	}
-
-	/**
-	 *			parallax end 			*/
-
 	.section {
 		position: relative;
 		padding: 75px 0;
@@ -84,7 +36,7 @@ body {
 		width: 100%;
 		margin: 0 auto;
 		color: #fff;
-		font-size: 20px;
+		font-size: 22px;
 		text-shadow: 1px 1px #000;
 	}
 
@@ -93,8 +45,8 @@ body {
 		position: relative;
 		text-align: center;
 		top: 200px;
-		width: 160px;
-		height: 160px;
+		width: 200px;
+		height: 200px;
 		margin: 0 auto;
 		border-radius: 50%;
 		border: 0;
@@ -114,7 +66,8 @@ body {
 		height: 100%;
 		background: #0f90a3;
 		padding: 10% 0;
-		box-shadow: inset 0 50px 50px -50px #000, 0px 1px 50px #000;
+		box-shadow: inset 0px 50px 50px -50px #000, 
+											0px 1px 50px #000;
 	}
 
 	.about {
@@ -254,8 +207,8 @@ body {
 		z-index: 1000;
 		min-height: 570px;
 		background-repeat: none;
-		background-size: auto;
-		margin-left: -400px
+		background-size: cover;
+		margin-left: -400px;
 	}
 
 }
@@ -264,6 +217,8 @@ body {
 
 	:root {
 		--scale-size: scale(1.05);
+		--black-clr: #000;
+		--white-clr: #fff;
 	}
 
 	a {
@@ -280,55 +235,6 @@ body {
 		text-align: center;
 		user-select: none;
 	}
-
-	/**
-	 *
-	 parallax begin */
-
-	.parallax {
-		z-index: 1000;
-	  perspective: 1px;
-	  height: 630px;
-	  background: #000;
-	  overflow-x: hidden;
-	  overflow-y: auto;
-	  perspective-origin-x: 100%;
-	}
-
-	.parallax__group {
-	  position: relative;
-	  height: 100vh;
-	  transform-style: preserve-3d;
-	}
-
-	.parallax__layer {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0;
-	  transform-origin-x: 100%;
-	}
-
-	.parallax__layer--base {
-		-webkit-transform: translateZ(0);
-		-moz-transform: translateZ(0);
-		-ms-transform: translateZ(0);
-		-o-transform: translateZ(0);
-	  transform: translateZ(0);
-	}
-
-	.parallax__layer--back {
-		-webkit-transform: translateZ(-1px) scale(2);
-		-moz-transform: translateZ(-1px) scale(2);
-		-ms-transform: translateZ(-1px) scale(2);
-		-o-transform: translateZ(-1px) scale(2);
-	  transform: translateZ(-1px) scale(2);
-	}
-
-	/**
-	 *
-	 parallax end */
 
 	#spa {
 		display: block;
@@ -358,9 +264,9 @@ body {
 		width: 100%;
 		padding: 0;
 		margin: 0 auto;
-		color: #fff;
-		font-size: 20px;
-		text-shadow: 1px 1px #000;
+		color: var(--white-clr);
+		font-size: 22px;
+		text-shadow: 1px 1px var(--black-clr);
 		user-select: none;
 	}
 
@@ -369,8 +275,8 @@ body {
 		position: relative;
 		text-align: center;
 		top: 290px;
-		width: 180px;
-		height: 180px;
+		width: 200px;
+		height: 200px;
 		margin: 0 auto;
 		border-radius: 50%;
 		border: 0;
@@ -382,7 +288,8 @@ body {
 		height: 100%;
 		background: #0f90a3;
 		padding: 10% 0;
-		box-shadow: inset 0 50px 50px -50px #000, 0px 1px 50px #000;
+		box-shadow: inset 0px 50px 50px -50px var(--black-clr), 
+											0px 1px 50px var(--black-clr);
 	}
 
 	.about {
@@ -390,7 +297,7 @@ body {
 		margin: 0 auto;
 		background-image: url("../media/light.jpeg");
 		background-size: cover;
-		box-shadow: 0px 1px 50px #000;
+		box-shadow: 0px 1px 50px var(--black-clr);
 	}
 
 	.about-me-header {
@@ -478,8 +385,8 @@ body {
 		right: 34.5px;
 		width: 1px;
 		height: 45px;
-		border: 1px solid #fff;
-		background: #fff;
+		border: 1px solid var(--white-clr);
+		background: var(--white-clr);
 		-webkit-transform: rotate(-39deg);
 		-moz-transform: rotate(-39deg);
 		-ms-transform: rotate(-39deg);
@@ -494,8 +401,8 @@ body {
 		left: 34.5px;
 		width: 1px;
 		height: 45px;
-		border: 1px solid #fff;
-		background: #fff;
+		border: 1px solid var(--white-clr);
+		background: var(--white-clr);
 		-webkit-transform: rotate(39deg);
 		-moz-transform: rotate(39deg);
 		-ms-transform: rotate(39deg);
