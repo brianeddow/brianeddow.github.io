@@ -220,6 +220,7 @@ body {
 		--black-clr: #000;
 		--white-clr: #fff;
 		--icon-drop-shadow: #355370;
+		--icon-shadow-size: 0.95rem;
 	}
 
 	a {
@@ -281,6 +282,7 @@ body {
 		margin: 0 auto;
 		border-radius: 50%;
 		border: 0;
+		user-select: none;
 	}
 
 	.my-work {
@@ -331,8 +333,17 @@ body {
 		transition: transform 0.3s;
 	}
 
+	body a#react img.icon:hover {
+		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
+		-webkit-transform: var(--scale-size);
+		-moz-transform: var(--scale-size);
+		-ms-transform: var(--scale-size);
+		-o-transform: var(--scale-size);
+		transform: var(--scale-size);
+	}
+
 	body a#jsfid img.icon:hover {
-		filter: drop-shadow(0 0 0.95rem var(--icon-drop-shadow));
+		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
 		-webkit-transform: var(--scale-size);
 		-moz-transform: var(--scale-size);
 		-ms-transform: var(--scale-size);
@@ -341,7 +352,7 @@ body {
 	}
 
 	body a#codepen img.icon:hover {
-		filter: drop-shadow(0 0 0.95rem var(--icon-drop-shadow));
+		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
 		-webkit-transform: var(--scale-size);
 		-moz-transform: var(--scale-size);
 		-ms-transform: var(--scale-size);
@@ -350,7 +361,7 @@ body {
 	}
 
 	body a#github img.icon:hover {
-		filter: drop-shadow(0 0 0.95rem var(--icon-drop-shadow));
+		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
 		-webkit-transform: var(--scale-size);
 		-moz-transform: var(--scale-size);
 		-ms-transform: var(--scale-size);

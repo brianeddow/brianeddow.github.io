@@ -23,12 +23,14 @@ const arrowVis = () => {
 
 window.onscroll = () => arrowVis();
 
+/*
 const getHome = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
 document.getElementById("arrow-up").addEventListener("click", getHome);
+*/
 
 /* contact button logics */
 const contactMeButton = document.getElementById("open-contact-me"),
@@ -46,8 +48,8 @@ const contactMeButtonData = () => {
         contactMe.style.display = "none";
       };
 
-contactMeButton.addEventListener("click", contactMeButtonData)
-closeContactMe.addEventListener("click", closeContactMeData)
+contactMeButton.addEventListener("click", contactMeButtonData);
+closeContactMe.addEventListener("click", closeContactMeData);
 
 /* 
  * email logics */
