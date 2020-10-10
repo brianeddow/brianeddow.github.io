@@ -333,6 +333,10 @@ body {
 		transition: transform 0.3s;
 	}
 
+	.extended {
+		width: 150px;
+	}
+
 	body a#react img.icon:hover {
 		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
 		-webkit-transform: var(--scale-size);
