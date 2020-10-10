@@ -8,7 +8,7 @@
 	.parallax {
 		z-index: 1000;
 	  perspective: 1px;
-	  height: 800px;
+	  height: 1000px;
 	  background: #000;
 	  overflow-x: hidden;
 	  overflow-y: auto;
@@ -98,7 +98,7 @@
 	.parallax {
 		z-index: 1000;
 	  perspective: 1px;
-	  height: 630px;
+	  height: 830px;
 	  background: #000;
 	  overflow-x: hidden;
 	  overflow-y: auto;

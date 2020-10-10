@@ -287,8 +287,8 @@ body {
 
 	.my-work {
 		margin-top: 0;
-		z-index: 900;
-		height: 100%;
+		z-index: 1000;
+		height: 430px;
 		background: #0f90a3;
 		padding: 10% 0;
 		box-shadow: inset 0px 50px 50px -50px var(--black-clr), 

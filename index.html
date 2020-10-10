@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/parallax.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/contact.css" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" type="text/css" />
   </head>
   <body>
 
@@ -38,7 +38,8 @@
                data-aos-duration="1700">
         </div>
       </div>
-  	</div>
+  	<!-- end parallax header -->
+
   	<div class="section my-work" id="my-work">
       <p class="my-work-header">Projects/Snippets below use HTML, CSS, Vanilla JavaScript and React</p>
       <p>
@@ -47,8 +48,6 @@
             src="./assets/media/react.png" 
             class="icon" 
             alt="react" 
-            data-aos="fade-up"
-            data-aos-delay="0"
           />
         </a>
         <a href="http://jsfiddle.net/user/brianeddow/fiddles" id="jsfid">
@@ -56,8 +55,6 @@
             src="./assets/media/jsfiddle.png" 
             class="icon" 
             alt="jsfiddle" 
-            data-aos="fade-up"
-            data-aos-delay="150"
           />
         </a>
         <a href="http://codepen.io/intermittentdev" id="codepen">
@@ -65,8 +62,6 @@
             src="./assets/media/codepen.png" 
             class="icon" 
             alt="codepen" 
-            data-aos="fade-up" 
-            data-aos-delay="300"
           />
         </a>
         <a href="http://github.com/brianeddow" id="github">
@@ -74,14 +69,12 @@
             src="./assets/media/github.png" 
             class="icon" 
             alt="github" 
-            data-aos="fade-up" 
-            data-aos-delay="450"
           />
         </a>
       </p>
   	</div>
   	<div class="section about">
-      <p class="about-me-header" data-aos="zoom-out" data-aos-duration="1700">About Me</p>
+      <p class="about-me-header">About Me</p>
       <p>I became a bootcamp graduate following a business degree after playing with web design in my early years.</p>
       <p>My spark for development was reignited after realizing my aha moment, 5 years later!</p>
       <p>Most of my time is spent with JavaScript but play with XCode and Swift occasionally.</p>
@@ -90,13 +83,17 @@
   	<div class="section contact-me">
     	<button class="contact-me-button" id="open-contact-me" type="submit">CONTACT ME</button>
       <a href="#my-work">
-        <div id="arrow-up" data-aos="zoom-out" data-aos-duration="1300">
+        <div id="arrow-up">
           <div id="arrow-up-left"></div>
           <div id="arrow-up-right"></div>
         </div>
       </a>
   	</div>
   </div>
+
+  <!-- end parallax div -->
+  </div>
+
   <!---------------------                     --------------------->  
   <div id="contact-form-wrapper">
     <p id="form-header">WRITE ME</p>
@@ -132,13 +129,14 @@
     <button class="form-button" id="reset-form">R E S E T</button>
   </div>
 
+
   <!---------------------                     --------------------->
   <script src="./assets/scripts/script.js"></script>
   <!-- email client -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./assets/scripts/mailer.js"></script>
   <!-- AOS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159460440-1"></script>
   <script>
