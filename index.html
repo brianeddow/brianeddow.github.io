@@ -10,23 +10,15 @@
     <title>Brian Eddow</title>
     <meta name="author" content="Brian Eddow">
     <meta name="description" content="brian eddow full stack web developer">
-    <meta name="keywords" content="fullstack, web, dev, developer, web developer, css, html, javascript, node, angular, web design, ux, ui, mobile, responsive, brian, eddow, brian eddow">
-    <!-- edit the above -->
+    <meta name="keywords" content="fullstack, web, dev, developer, web developer, 
+    css, html, javascript, node, angular, web design, ux, ui, mobile, responsive, 
+    brian, eddow, brian eddow">
     <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/parallax.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/contact.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" type="text/css" />
     <!-- hotjar -->
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2027933,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    <script src="./assets/scripts/hotjar.js"></script>
   </head>
   <body>
 
@@ -41,14 +33,15 @@
         </div>
         <div class="parallax__layer parallax__layer--base">
           <!-- foreground -->
-          <p class="greeting">Hi, I'm Brian.</p>
-          <p class="greeting">Welcome to my landing page</p>
+          <p class="greeting" id="greeting1">Hi, I'm Brian.</p>
+          <p class="greeting" id="greeting2">Welcome to my landing page</p>
           <img id="greeting-photo-card" 
                src="./assets/media/landing-icon.jpg" 
                data-aos="zoom-out" 
                data-aos-duration="1700">
         </div>
-      </div>
+      </div> <!--
+    </div> -->
   	<!-- end parallax header -->
 
   	<div class="section my-work" id="my-work">
@@ -159,21 +152,17 @@
 
   <!---------------------                     --------------------->
   <script src="./assets/scripts/script.js"></script>
+  <script src="./assets/scripts/aos.js"></script>
+  <script src="./assets/scripts/analytics.js"></script>
+  <script src="./assets/scripts/typewriter.js"></script>
   <!-- email client -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./assets/scripts/mailer.js"></script>
+  <!-- typewriterjs -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159460440-1"></script>
-  <script>
-    AOS.init();
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-159460440-1');
-  </script>
   </body>
 </html>
