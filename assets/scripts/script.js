@@ -13,8 +13,8 @@ document.addEventListener('aos:out', ({ detail }) => {
 /* up arrow logics */
 const arrowVis = () => {
   const arrowUp = document.getElementById("arrow-up");
-  if (document.body.scrollTop > 1900 || 
-      document.documentElement.scrollTop > 1900) {
+  if (document.body.scrollTop > 1700 || 
+      document.documentElement.scrollTop > 1700) {
     arrowUp.style.display = "block";
   } else {
     arrowUp.style.display = "none";
@@ -32,24 +32,7 @@ const getHome = () => {
 document.getElementById("arrow-up").addEventListener("click", getHome);
 */
 
-/* contact button logics */
-const contactMeButton = document.getElementById("open-contact-me"),
-      spa = document.getElementById("spa"),
-      contactMe = document.getElementById("contact-form-wrapper"),
-      closeContactMe = document.getElementById("close-contact-me"),
-      resetForm = document.getElementById("reset-form");
-
-const contactMeButtonData = () => {
-        spa.style.display = "none";
-        contactMe.style.display = "block";
-      },
-      closeContactMeData = () => {
-        spa.style.display = "block";
-        contactMe.style.display = "none";
-      };
-
-contactMeButton.addEventListener("click", contactMeButtonData);
-closeContactMe.addEventListener("click", closeContactMeData);
+const resetForm = document.getElementById("reset-form");
 
 /* 
  * email logics */

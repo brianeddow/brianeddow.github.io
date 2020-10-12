@@ -1,8 +1,7 @@
 @media only screen and (min-width: 320px) {
 
 	#contact-form-wrapper {
-		background: #f2e090;
-		display: none;
+		display: block;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -25,28 +24,26 @@
 	.contact-input {
 		display: block;
 		width: 100%;
+		height: 30px;
 		font-size: 17px;
-		text-transform: uppercase;
-		background: #f2e090;
 		padding-left: 7px;
 		border-bottom: 2px solid #fff;
 		border-left: 0;
 		border-right: 0;
 		border-top: 0;
-		border-radius: 12px;
+		border-radius: 4px;
+		opacity: 0.5;
 	}
 
 	.contact-input:focus {
 		display: block;
 		width: 100%;
 		font-size: 17px;
-		text-transform: uppercase;
-		background: #ffff99;
 		border-bottom: 2px solid #fff;
 		border-left: 0;
 		border-right: 0;
 		border-top: 0;
-		border-radius: 12px;
+		border-radius: 4px;
 		outline: none;
 	}
 
@@ -55,29 +52,35 @@
 		width: 100%;
 		height: 140px;
 		font-size: 18px;
-		border-radius: 12px;
+		border-radius: 4px;
 		padding-left: 7px;
-		text-transform: uppercase;
 		outline: none;
+		transition: all 0.9s;
+		opacity: 0.5;
 	}
 
 	.contact-textarea:focus {
 		display: block;
 		width: 100%;
-		height: 140px;
+		height: 200px;
 		font-size: 18px;
 		border-radius: 10px;
-		background: #ffff99;
 		padding-left: 7px;
 		text-transform: uppercase;
 		border: 1px solid #f2e090;
 		outline: none;
+		transition: all 0.9s;
 	}
 
-	#close-contact-me {
-		display: block;
+	#close-contact-me, 
+	#reset-form {
 		margin: 20px auto;
-		outline: none;
+		width: 300px;
+		height: 25px;
+		font-size: 14px;
+		border: 0;
+		color: #fff;
+		background: transparent;
 	}
 
 	.form-button {
@@ -101,13 +104,13 @@
 
 	#contact-form-wrapper {
 		position: absolute;
-		display: none;
+		display: block;
 		width: 100vw;
 		height: 100vh;
 		margin: 0 auto;
-		padding: 0;
+		padding-top: 50px;
 		top: 0;
-		background: #f2e090;
+		background-image: linear-gradient(to bottom right, gray, #f2a644);
 		text-align: center;
 	}
 
@@ -127,7 +130,8 @@
 		height: 25px;
 		font-size: 14px;
 		border: 0;
-		background: #f2e090;
+		color: #fff;
+		background: transparent;
 	}
 
 	.form-button {
@@ -136,7 +140,8 @@
 		height: 25px;
 		font-size: 14px;
 		border: 0;
-		background: #f2e090;
+		color: #fff;
+		background: transparent;
 	}
 
 	.form-button:focus {
@@ -148,19 +153,10 @@
 		height: 31px;
 		padding-left: 30px;
 		margin: 0 auto;
-		text-transform: uppercase;
 		border: 1px solid #222;
 		border-radius: 0;
-		box-shadow: 0 0 15px #d1776e;
 		background: #fff;
-	}
-
-	.contact-input--2 {
-		box-shadow: 0 0 15px #ce594e;
-	}
-
-	.contact-input--3 {
-		box-shadow: 0 0 15px #ce4d42;
+		opacity: 0.5;
 	}
 
 	.contact-input:focus {
@@ -178,11 +174,10 @@
 		padding-top: 10px;
 		padding-left: 30px;
 		margin: 0 auto;
-		text-transform: uppercase;
 		border: 1px solid #222;
 		border-radius: 0;
 		transition: all 0.9s;
-		box-shadow: 0 0 15px #d22515;
+		opacity: 0.5;
 	}
 
 	.contact-textarea:focus {

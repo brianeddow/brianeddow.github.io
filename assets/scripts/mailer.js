@@ -29,12 +29,12 @@ document.getElementById("close-contact-me").addEventListener("click", () => {
 	);
 
 	/* reset form fields function */
-	resetForm = () => {
-	  const name = document.getElementById("name"),
-	        email = document.getElementById("email"),
-	        topic = document.getElementById("topic"),
-	        comment = document.getElementById("comment"),
-	        entities = new Array(name,email,topic,comment);
+	const resetForm = () => {
+	  let name = document.getElementById("name"),
+	      email = document.getElementById("email"),
+	      topic = document.getElementById("topic"),
+	      comment = document.getElementById("comment"),
+	      entities = new Array(name,email,topic,comment);
 	  entities.map(ent => { ent.value = ""; }) 
 	}
 

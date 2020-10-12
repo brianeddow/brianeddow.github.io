@@ -11,8 +11,8 @@
     <meta name="author" content="Brian Eddow">
     <meta name="description" content="brian eddow full stack web developer">
     <meta name="keywords" content="fullstack, web, dev, developer, web developer, 
-    css, html, javascript, node, angular, web design, ux, ui, mobile, responsive, 
-    brian, eddow, brian eddow">
+    css, html, javascript, node, react, angular, web design, ux, ui, mobile, responsive, 
+    brian eddow">
     <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/parallax.css" type="text/css">
     <link rel="stylesheet" href="./assets/styles/contact.css" type="text/css">
@@ -101,7 +101,44 @@
       <p>I spend my time away from code playing music, at the gym, with my fiancée and friends.</p>
   	</div>
   	<div class="section contact-me">
-    	<button class="contact-me-button" id="open-contact-me" type="submit">CONTACT ME</button>
+     <div id="contact-form-wrapper">
+      <p id="form-header">Contact Me</p>
+      <p class="input-wrapper">
+        <input 
+          type="text" 
+          id="name" 
+          class="contact-input" 
+          placeholder="name">
+        </input>
+      </p>
+      <p class="input-wrapper">
+        <input 
+          type="text" 
+          id="email" 
+          class="contact-input" 
+          placeholder="email">
+        </input>
+      </p>
+      <p class="input-wrapper">
+        <input 
+          type="text" 
+          id="topic" 
+          class="contact-input" 
+          placeholder="topic">
+        </input>
+      </p>
+      <p class="input-wrapper">
+        <textarea 
+          type="text" 
+          id="comment" 
+          class="contact-textarea" 
+          placeholder="comment">
+        </textarea>
+      </p>
+      <button id="close-contact-me">S E N D</button>
+      <button class="form-button" id="reset-form">R E S E T</button>
+    </div>
+
       <a href="#my-work">
         <div id="arrow-up">
           <div id="arrow-up-left"></div>
@@ -114,40 +151,7 @@
   <!-- end parallax div -->
   </div>
 
-  <!---------------------                     --------------------->  
-  <div id="contact-form-wrapper">
-    <p id="form-header">WRITE ME</p>
-    <p class="input-wrapper">
-      <input type="text" 
-             id="name" 
-             class="contact-input" 
-             placeholder="NAME">
-      </input>
-    </p>
-    <p class="input-wrapper">
-      <input type="text" 
-             id="email" 
-             class="contact-input contact-input--2" 
-             placeholder="EMAIL">
-      </input>
-    </p>
-    <p class="input-wrapper">
-      <input type="text" 
-             id="topic" 
-             class="contact-input contact-input--3" 
-             placeholder="TOPIC">
-      </input>
-    </p>
-    <p class="input-wrapper">
-      <textarea type="text" 
-                id="comment" 
-                class="contact-textarea" 
-                placeholder="COMMENT">
-      </textarea>
-    </p>
-    <button id="close-contact-me">S E N D</button>
-    <button class="form-button" id="reset-form">R E S E T</button>
-  </div>
+  <!---------------------                     --------------------->
 
 
   <!---------------------                     --------------------->
