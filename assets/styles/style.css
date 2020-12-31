@@ -1,3 +1,28 @@
+/* background gradient animation
+ * https://www.gradient-animator.com/
+ */
+@-webkit-keyframes Saunter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Saunter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes Saunter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Saunter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
 
 body {
 	font-family: Roboto,
@@ -24,7 +49,7 @@ body {
 	.section {
 		position: relative;
 		padding: 75px 0;
-		height: 550px;
+		height: 600px;
 		text-align: center;
 		overflow: hidden;
 	}
@@ -63,7 +88,7 @@ body {
 	.my-work {
 		margin-top: -50px;
 		z-index: 900;
-		height: 100%;
+		min-height: 1200px;
 		background: #0f90a3;
 		padding: 10% 0;
 		box-shadow: 
@@ -95,7 +120,6 @@ body {
 	}
 
 	.contact-me {
-		background: #f2a644;
 		padding: 15% 0;
 		height: 700px;
 		background-image: linear-gradient(to bottom right, gray, #f2a644);
@@ -202,6 +226,10 @@ body {
 		transform: rotate(39deg);
 	}
 
+	body a#ga img.icon {
+		min-width: 60%;
+	}
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -291,13 +319,18 @@ body {
 	.my-work {
 		margin-top: 0;
 		z-index: 1000;
-		height: 430px;
+		min-height: 200px;
 		background: #0f90a3;
 		padding: 10% 0;
 		box-shadow: 
 			inset 0px 50px 50px -50px var(--black-clr), 
-			0px 1px 50px var(--black-clr);
+						0px 1px 50px var(--black-clr);
 		background-image: linear-gradient(to bottom right, orange, #0f90a3);
+		background-size: 200% 200%;
+		-webkit-animation: Saunter 24s ease infinite;
+    -moz-animation: Saunter 24s ease infinite;
+    -o-animation: Saunter 24s ease infinite;
+    animation: Saunter 24s ease infinite;
 	}
 
 	.about {
@@ -371,6 +404,28 @@ body {
 	}
 
 	body a#github img.icon:hover {
+		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
+		-webkit-transform: var(--scale-size);
+		-moz-transform: var(--scale-size);
+		-ms-transform: var(--scale-size);
+		-o-transform: var(--scale-size);
+		transform: var(--scale-size);
+	}
+
+	body a#ga img.icon:hover {
+		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
+		-webkit-transform: var(--scale-size);
+		-moz-transform: var(--scale-size);
+		-ms-transform: var(--scale-size);
+		-o-transform: var(--scale-size);
+		transform: var(--scale-size);
+	}
+
+	body a#ga img.icon {
+		min-width: 15%;
+	}
+
+	body a#jquery img.icon:hover {
 		filter: drop-shadow(0 0 var(--icon-shadow-size) var(--icon-drop-shadow));
 		-webkit-transform: var(--scale-size);
 		-moz-transform: var(--scale-size);

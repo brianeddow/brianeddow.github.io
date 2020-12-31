@@ -98,6 +98,10 @@
 		background-color: #ffff99;
 	}
 
+	#greeting1 {
+		min-height: 80px;
+	}
+
 }
 
 @media only screen and (min-width: 1024px) {	
@@ -120,7 +124,7 @@
 		margin: 0 auto;
 		width: 600px;
 		font-size: 35px;
-		color: #000;
+		color: #fff;
 		user-select: none;
 	}
 
