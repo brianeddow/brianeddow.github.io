@@ -325,7 +325,7 @@ body {
 		z-index: 1000;
 		min-height: 200px;
 		background: #0f90a3;
-		padding: 10% 0;
+		padding: 10% 10%;
 		box-shadow: 
 			inset 0px 50px 50px -50px var(--black-clr),
 						0px 1px 50px var(--black-clr),
