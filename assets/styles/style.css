@@ -252,7 +252,7 @@ body {
 @media only screen and (min-width: 1024px) {
 
 	:root {
-		--scale-size: scale(1.05);
+		--scale-size: scale(1.05) translateY(-4px);
 		--black-clr: #000;
 		--white-clr: #fff;
 		--icon-drop-shadow: #355370;
@@ -399,7 +399,7 @@ body {
 		-moz-transform: var(--scale-size);
 		-ms-transform: var(--scale-size);
 		-o-transform: var(--scale-size);
-		transform: var(--scale-size);
+		transform: var(--scale-size) translateY(-3px);
 	}
 
 	body a#jsfid img.icon:hover {
