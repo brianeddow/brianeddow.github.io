@@ -95,15 +95,16 @@ body {
 			inset 0px 50px 50px -50px #000, 
 						0px 1px 50px #000;
 		background-image: linear-gradient(to bottom right, orange, #0f90a3);
-		-webkit-animation: Saunter 5ms ease infinite;
-    -moz-animation: Saunter 5ms ease infinite;
-    -o-animation: Saunter 5ms ease infinite;
-    animation: Saunter 5ms ease infinite;
+		background-size: 250% 250%;
+		-webkit-animation: Saunter 20s ease infinite;
+    -moz-animation: Saunter 20s ease infinite;
+    -o-animation: Saunter 20s ease infinite;
+    animation: Saunter 20s ease infinite;
 	}
 
 	.about {
 		z-index: 800;
-		min-height: 550px;
+		min-height: 670px;
 		vertical-align: middle;
 		background-image: url("../media/light.jpeg");
 		background-size: cover;
@@ -336,7 +337,7 @@ body {
 						0px 48px 33.4px rgba(0, 0, 0, 0.05),
 						0px 115px 80px rgba(0, 0, 0, 0.07);
 		background-image: linear-gradient(to bottom right, orange, #0f90a3);
-		background-size: 200% 200%;
+		background-size: 225% 225%;
 		-webkit-animation: Saunter 24s ease infinite;
     -moz-animation: Saunter 24s ease infinite;
     -o-animation: Saunter 24s ease infinite;
